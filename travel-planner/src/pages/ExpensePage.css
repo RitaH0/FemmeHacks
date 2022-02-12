@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    background-color: rgb(232, 219, 255);
+	font-family: "Courier New", monospace;
+}
+
+input, button {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+h1 {
+	color: var(--grey);
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.total-expense {
+	color: var(--grey);
+	font-size: 28px;
+	font-weight: 900;
+	background-color: white;
+	padding: 5px 25px;
+	border-radius: 8px;
+}
+
+.expense-form {
+	display: block;
+	margin: 15px;
+	position: relative;
+}
+
+.form-inner {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	border-radius: 8px;
+}
+.form-inner input {
+	font-size: 18px;
+	padding: 10px 15px;
+	background-color: rgb(120, 63, 252);
+    
+}
+
+.form-inner input[type="text"] {
+    
+	flex: 1 1 100%;
+}
+.form-inner input[type="date"] {
+	border-radius: 8px 0px 0px 8px;
+	min-width: 200px;
+    
+}
+
+.form-inner input[type="submit"] {
+	border-radius: 0px 8px 8px 0px;
+	cursor: pointer;
+	color: var(--dark);
+	font-weight: 600;
+	text-transform: uppercase;
+    background-color: lightgray;
+}
+
+.form-inner input[type="submit"]:hover {
+	background-color: rgb(120, 63, 252);
+}
+
+.expense-list {
+	padding: 15px;
+    flex: 1 1 100%;
+}
+
+.expense-list .expense-item {
+	position: relative;
+	padding: 10px 15px;
+	background-color: white;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	display: flex;
+	
+	padding-left: 75px;
+}
+
+.expense-list .expense-item .remove-item {
+	position: absolute;
+	width: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+    background-color: white;
+
+	cursor: pointer;
+	display: block;
+	color: var(--light);
+	font-weight: 600;
+	background-color: var(--alert);
+	border-radius: 8px 0px 0px 8px;
+}
+
+
+
+.expense-list .expense-item:hover .remove-item {
+	width: 50px;
+    background-color: lightgray;
+}
+
+.expense-list .expense-item .desc {
+	flex: 1 1 100%;
+}
+
+.expense-list .expense-item .amount,
+.expense-list .expense-item .date {
+	min-width: 125px;
+}
