@@ -1,5 +1,5 @@
-# FemmeHacks
-# Trip planner and expense tracker
+# Trip planner and expense tracker - FemmeHacks
+
 
 ## Description
 Firstly ,this app allows users to create a travel plan by first choosing the duration (number of days) of the trip. Users can either view the overall plan 
