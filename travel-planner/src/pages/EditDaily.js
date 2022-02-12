@@ -5,8 +5,18 @@ import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 const EditDaily = ({props}
 ) => {
-    const location = useLocation();
-     console.log('state', location);
+    // const location = useLocation();
+    //  console.log('state', location);
+
+     const [destination, setDestination] = useState(" ");
+     const [food, setFood] = useState(" ");
+     const [leisure, setLeisure] = useState(" ");
+     const [transportation, setTransportation] = useState(" ");
+
+     console.log(destination)
+     console.log(food)
+     console.log(leisure)
+     console.log(transportation)
 
     return(
         <div className='EditDaily'>
@@ -16,7 +26,7 @@ const EditDaily = ({props}
                 <Row>
  
                     <div className = 'dayNumber'>
-                        <h className = "dayNumberText">hi</h>
+                        <h className = "dayNumberText">Enter your plan</h>
                     </div>
                     {/* <a href='/PlannerPage'>
                     <button className = 'backButton'>Save</button>
@@ -29,16 +39,48 @@ const EditDaily = ({props}
                 </Row>
                 <Row className = "dailyRow">
                     <Col className = "dailyCol">
-                        <DailyColumn columnName = "DESTINATION"/>
+                        {/* <DailyColumn columnName = "Destination" day = "day1"/> */}
+                        <Row>
+                            <div className = 'columnBox'>
+                                <h className='columnText'>Destination</h>
+                            </div>
+                        </Row>
+                        <Row>
+                            <input id = "Destination"className='columnInput' type="text" onChange = {event => setDestination(event.target.value)} ></input>
+                        </Row>
                     </Col>
                     <Col className = "dailyCol">
-                        <DailyColumn columnName = "FOOD"/>
+                        {/* <DailyColumn columnName = "Food" day = "day1"/> */}
+                        <Row>
+                            <div className = 'columnBox'>
+                                <h className='columnText'>Food</h>
+                            </div>
+                        </Row>
+                        <Row>
+                            <input id = "Destination"className='columnInput' type="text" onChange = {event => setFood(event.target.value)}></input>
+                        </Row>
                     </Col>
                     <Col className = "dailyCol">
-                        <DailyColumn columnName = "LEISURE"/>
+                        {/* <DailyColumn columnName = "Leisure" day = "day1"/> */}
+                        <Row>
+                            <div className = 'columnBox'>
+                                <h className='columnText'>Leisure</h>
+                            </div>
+                        </Row>
+                        <Row>
+                            <input id = "Destination"className='columnInput' type="text"onChange = {event => setLeisure(event.target.value)} ></input>
+                        </Row>
                     </Col>
                     <Col className = "dailyCol">
-                        <DailyColumn columnName = "TRANSPORTATION"/>
+                        {/* <DailyColumn columnName = "Transportation" day = "day1"/> */}
+                        <Row>
+                            <div className = 'columnBox'>
+                                <h className='columnText'>Transportation</h>
+                            </div>
+                        </Row>
+                        <Row>
+                            <input id = "Destination"className='columnInput' type="text"onChange = {event => setTransportation(event.target.value)} ></input>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

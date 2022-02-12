@@ -36,40 +36,10 @@ const PlannerPage = () =>{
             </Container>
             {showDays()}
             {elements}
-            {/* <Link type = "button" className = "btn"to = {{
-                pathname: "/EditDaily",
-                state: "day 1",
-            }}>
-                <p className = "btnName">day 1</p>
-            </Link>
-
-            <Link type = "button" className = "btn"to = {{
-                pathname: "/EditDaily",
-                state: "day 2",
-            }}>
-                <p className = "btnName">day 2</p>
-            </Link> */}
 
 
 
-            {/* <Container>
-                <Row>
-                    <h>Your {duration} day trip plan: </h>
-
-                </Row>
-                <Row>
-                    <Col>
-                        <div className = 'columnBox'>
-                            <h className='columnText'>DATE</h>
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className = 'columnBox'>
-                            <h className='columnText'>DAY</h>
-                        </div>
-                    </Col>
-                </Row>
-            </Container> */}
+ 
 
             </div>
         </div>
