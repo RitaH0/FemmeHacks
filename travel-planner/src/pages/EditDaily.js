@@ -1,9 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {Col, Row, Button, Container} from "react-bootstrap";
 import DailyColumn from '../components/DailyColumn';
-const EditDaily = (
-    day
+import { Link } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+const EditDaily = ({props}
 ) => {
+    const location = useLocation();
+     console.log('state', location);
+
     return(
         <div className='EditDaily'>
             <div className='EditDaily__body'>
@@ -12,11 +16,16 @@ const EditDaily = (
                 <Row>
  
                     <div className = 'dayNumber'>
-                        <h className = "dayNumberText">Day 1</h>
+                        <h className = "dayNumberText">hi</h>
                     </div>
-                    <a href='/PlannerPage'>
+                    {/* <a href='/PlannerPage'>
                     <button className = 'backButton'>Save</button>
-                    </a>
+                    </a> */}
+                <Link className = "backButton"to = {{
+                    pathname: "/PlannerPage",
+                }}>
+                    <p className = "backButtonText">save</p>
+                </Link>
                 </Row>
                 <Row className = "dailyRow">
                     <Col className = "dailyCol">
@@ -39,6 +48,7 @@ const EditDaily = (
         </div>
         
     )
+
 }
 
 export default EditDaily;

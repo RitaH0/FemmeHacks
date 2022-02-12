@@ -2,9 +2,6 @@ import React, {useEffect, useState} from 'react';
 
 const WelcomePage = () => {
 
-    // const setBackground = () =>{
-    //     document.getElementById("welcomeBackground").
-    // }
 
     const [duration, setDuration] = useState("");
 

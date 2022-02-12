@@ -41,12 +41,20 @@
     border: none;
     border-radius: 0.6rem;
 
-    color: rgb(120, 63, 252);
-    font-family: "Courier New",monospace;
-    font-size: 16px;
+    /* color: rgb(120, 63, 252); */
+    /* font-family: "Courier New",monospace;
+    font-size: 16px; */
     position: absolute;
     left: 30%;
     top: 7%;
     width: 10vh;
     height: 5vh;
+}
+
+.backButtonText{
+    color: rgb(120, 63, 252);
+    font-family: "Courier New",monospace;
+    font-size: 16px;
+    position: relative;
+    top: 20%
 }
