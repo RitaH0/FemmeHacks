@@ -31,6 +31,9 @@ const PlannerPage = () =>{
             <Container>
                 <Row>
                 <h className = "header">Your {duration} day trip plan: </h>
+                <a href='/ExpensePage'>
+                <button className = 'expenseButton'>Track expense</button>
+                </a>
 
                 </Row>
             </Container>

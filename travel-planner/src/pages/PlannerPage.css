@@ -44,3 +44,15 @@
     position: relative;
     font-family: "Courier New",monospace;
 }
+.expenseButton{
+    position: absolute;
+    width: 30vh;
+    height: 7vh;
+    top: 8%;
+    left: 55%;
+
+    border-radius: 0.8rem;
+    background-color: rgb(31, 24, 27);
+    color: aliceblue;
+    border: none;
+}

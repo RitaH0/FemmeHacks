@@ -2,17 +2,32 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    background-color: rgb(232, 219, 255);
+    /* background-color: rgb(232, 219, 255); */
 	font-family: "Courier New", monospace;
+}
+.expensePage{
+	height: 100vh;
+    width: 100vw;
+	background-color: rgb(232, 219, 255);
 }
 
 input, button {
-	border: none;
+	/* border: none; */
 	outline: none;
-	background: none;
+	/* background: none; */
 }
 
-
+.returnButton{
+	position: absolute;
+	top: 2.3%;
+	right: 5%;
+	background-color: white;
+    border: none;
+    border-radius: 0.6rem;
+    width: 10vh;
+    height: 7vh;
+	font-weight: bold;
+}
 header {
 	display: flex;
 	justify-content: space-between;
@@ -32,6 +47,7 @@ h1 {
 	background-color: white;
 	padding: 5px 25px;
 	border-radius: 8px;
+	margin-right: -30%;
 }
 
 .expense-form {
@@ -96,31 +112,47 @@ h1 {
 	position: absolute;
 	width: 0;
 	top: 0;
-	left: 0;
+	left: 0.3;
 	bottom: 0;
-	overflow: hidden;
-    background-color: white;
+	/* overflow: hidden; */
+    background-color: rgb(120, 63, 252);
 
 	cursor: pointer;
 	display: block;
 	color: var(--light);
+	color: black;
+
 	font-weight: 600;
 	background-color: var(--alert);
 	border-radius: 8px 0px 0px 8px;
 }
 
-
-
-.expense-list .expense-item:hover .remove-item {
-	width: 50px;
-    background-color: lightgray;
+.remove-item{
+	color: black;
+	border: none;
 }
 
+/* .expense-list .expense-item:hover .remove-item {
+	width: 70px;
+    background-color: rgb(165, 131, 245);
+	color: black
+} */
+
 .expense-list .expense-item .desc {
+	margin-left: 25%;
 	flex: 1 1 100%;
 }
 
-.expense-list .expense-item .amount,
+/* .expense-list .expense-item .amount.{
+} */
 .expense-list .expense-item .date {
 	min-width: 125px;
+	margin-left: 15%;
+}
+::placeholder {
+	color: white;
+}
+.expenseInput{
+	color: white;
+	border: none;
 }
