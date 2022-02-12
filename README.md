@@ -10,10 +10,6 @@ The app include a line charts to view daily spending through out the trip (exclu
 and a pie chart to view the different categories of expenses.
 
 
-## Video walkthrough
-
-
-
 ## Notes
 (future functions to develop)
 * [ ] Add pictures and comments to ascites 
