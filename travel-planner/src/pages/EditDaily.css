@@ -27,11 +27,26 @@
     font-size: 20px;
 
 }
-.column1{
-    position: absolute;
-    left: 30%
+.dailyRow{
+    margin-top: 9%;
+
 }
-.column2{
+
+.dailyCol{
+    margin-right: -6%;
+    /* margin-left: -5%; */
+}
+.backButton{
+    background-color: white;
+    border: none;
+    border-radius: 0.6rem;
+
+    color: rgb(120, 63, 252);
+    font-family: "Courier New",monospace;
+    font-size: 16px;
     position: absolute;
-    left: 70%
+    left: 30%;
+    top: 7%;
+    width: 10vh;
+    height: 5vh;
 }

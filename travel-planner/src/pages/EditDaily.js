@@ -7,21 +7,32 @@ const EditDaily = (
     return(
         <div className='EditDaily'>
             <div className='EditDaily__body'>
-                <div className = 'dayNumber'>
-                    <h className = "dayNumberText">Day 1</h>
 
-                </div>
-                <div className = "container dailyColumns">
-                    <Row className = "column">
+            <Container>
+                <Row>
+ 
+                    <div className = 'dayNumber'>
+                        <h className = "dayNumberText">Day 1</h>
+                    </div>
+                    <a href='/PlannerPage'>
+                    <button className = 'backButton'>Save</button>
+                    </a>
+                </Row>
+                <Row className = "dailyRow">
+                    <Col className = "dailyCol">
                         <DailyColumn columnName = "DESTINATION"/>
-                        <DailyColumn columnName = "DESTINATION"/>
-                        <DailyColumn columnName = "DESTINATION"/>
-
-                    </Row>
-
-                </div>
-                {/* <DailyColumn className = "column2" columnName = "FOOD"/> */}
-
+                    </Col>
+                    <Col className = "dailyCol">
+                        <DailyColumn columnName = "FOOD"/>
+                    </Col>
+                    <Col className = "dailyCol">
+                        <DailyColumn columnName = "LEISURE"/>
+                    </Col>
+                    <Col className = "dailyCol">
+                        <DailyColumn columnName = "TRANSPORTATION"/>
+                    </Col>
+                </Row>
+            </Container>
 
 
             </div>

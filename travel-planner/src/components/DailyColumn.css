@@ -2,9 +2,9 @@
     background-color: rgb(198, 142, 250);
     width: 40vh;
     height: 12vh;
-    margin-left: 10%;
-    position: absolute;
-    top: 18%;
+    margin-right: 20%;
+
+    margin-top: 10%;
 }
 
 .columnText{
@@ -17,9 +17,8 @@
 
 
 .columnInput{
-    position: absolute;
-    top: 34%;
-    left:10%;
+
+    margin-top:10%;
     width: 40vh;
     height: 60vh;
     border: none;
@@ -28,5 +27,7 @@
     font-family: 15px;
     font-weight: bold;
     text-align: center;
+
+    margin-right: 20%;
 
 }
