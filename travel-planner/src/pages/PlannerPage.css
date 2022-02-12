@@ -12,7 +12,35 @@
 
     width: 20vh;
     height: 7vh;
-    
+
     background-color: blueviolet;
     margin-right: 10%;
+}
+
+.btn{
+    background-color: rgb(232, 219, 255);
+    width: 30vh;
+    height: 20vh;
+    /* color: black;
+    position: relative;
+    font-family: "Courier New",monospace;
+    font-size: 20px; */
+    margin-right: 10%;
+    margin-bottom: 8%;
+}
+
+.btnName{
+    color: black;
+    position: relative;
+    font-family: "Courier New",monospace;
+    font-size: 20px;
+    top: 30%
+}
+.header{
+    font-size: 30px;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    color: black;
+    position: relative;
+    font-family: "Courier New",monospace;
 }

@@ -1,33 +1,54 @@
 import React, {useEffect, useState} from 'react';
 import {Col, Row, Button, Container} from "react-bootstrap";
 import DailyColumn from '../components/DailyColumn';
-const EditDaily = (
-    day
+import { Link } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+const EditDaily = ({props}
 ) => {
+    const location = useLocation();
+     console.log('state', location);
+
     return(
         <div className='EditDaily'>
             <div className='EditDaily__body'>
-                <div className = 'dayNumber'>
-                    <h className = "dayNumberText">Day 1</h>
 
-                </div>
-                <div className = "container dailyColumns">
-                    <Row className = "column">
+            <Container>
+                <Row>
+ 
+                    <div className = 'dayNumber'>
+                        <h className = "dayNumberText">hi</h>
+                    </div>
+                    {/* <a href='/PlannerPage'>
+                    <button className = 'backButton'>Save</button>
+                    </a> */}
+                <Link className = "backButton"to = {{
+                    pathname: "/PlannerPage",
+                }}>
+                    <p className = "backButtonText">save</p>
+                </Link>
+                </Row>
+                <Row className = "dailyRow">
+                    <Col className = "dailyCol">
                         <DailyColumn columnName = "DESTINATION"/>
-                        <DailyColumn columnName = "DESTINATION"/>
-                        <DailyColumn columnName = "DESTINATION"/>
-
-                    </Row>
-
-                </div>
-                {/* <DailyColumn className = "column2" columnName = "FOOD"/> */}
-
+                    </Col>
+                    <Col className = "dailyCol">
+                        <DailyColumn columnName = "FOOD"/>
+                    </Col>
+                    <Col className = "dailyCol">
+                        <DailyColumn columnName = "LEISURE"/>
+                    </Col>
+                    <Col className = "dailyCol">
+                        <DailyColumn columnName = "TRANSPORTATION"/>
+                    </Col>
+                </Row>
+            </Container>
 
 
             </div>
         </div>
         
     )
+
 }
 
 export default EditDaily;

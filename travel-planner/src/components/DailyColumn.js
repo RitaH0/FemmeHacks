@@ -5,15 +5,20 @@ import {Col, Container, Row} from "react-bootstrap";
 const DailyColumn = ({columnName}) => {
 
     return(
-        <div>
-            <div>
-                <div className = 'columnBox'>
-                    <h className='columnText'>{columnName}</h>
-                </div>
-                <input className='columnInput' type="text"></input>
 
-            </div>
-        </div>
+        <Container>
+                <Col>
+                    <Row>
+                        <div className = 'columnBox'>
+                            <h className='columnText'>{columnName}</h>
+                        </div>
+                    </Row>
+                    <Row>
+                        <input className='columnInput' type="text"></input>
+                    </Row>
+                </Col>
+                
+        </Container>
     );
 };
 
