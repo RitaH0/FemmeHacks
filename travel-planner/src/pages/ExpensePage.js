@@ -11,7 +11,7 @@ const ExpensePage = () =>{
     useEffect(() => {
         let temp = 0;
         for(let i=0; i<expense.length;i++){
-            temp += parseInt(expense[0].amount);
+            temp += parseInt(expense[i].amount);
         }
 
         setTotalExpense(temp);
@@ -19,7 +19,7 @@ const ExpensePage = () =>{
     }, [expense]);
 
     return(
-        <div className = 'container'>
+        <div className = 'expensePage'>
            <Header totalExpense={totalExpense} />
            <ExpenseForm expense={expense} setExpense={setExpense}/>
            <ExpenseList expense={expense} setExpense={setExpense}/>

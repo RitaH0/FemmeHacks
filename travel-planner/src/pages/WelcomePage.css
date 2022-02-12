@@ -8,6 +8,7 @@
     transform: translate(-50%, -50%);
     opacity: 1;
 
+    font-weight: bold;
 
 
 }
@@ -34,14 +35,14 @@
     border-radius: 0.8rem;
     background-color: rgb(31, 24, 27);
     color: aliceblue;
-    border-width: 0 rem;
+    border: none;
 }
 
 .durationText{
     position: absolute;
     font-size: large;
     font-weight: bold;
-    left: 25%;
+    left: 30%;
 
     top: 62%;
 
@@ -58,4 +59,5 @@
     border-radius: 0.3rem;
     border-color: black;
     top: 60%;
+    left: 60%
 }
