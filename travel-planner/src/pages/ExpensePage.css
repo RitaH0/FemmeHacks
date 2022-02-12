@@ -17,7 +17,17 @@ input, button {
 	/* background: none; */
 }
 
-
+.returnButton{
+	position: absolute;
+	top: 2.3%;
+	right: 5%;
+	background-color: white;
+    border: none;
+    border-radius: 0.6rem;
+    width: 10vh;
+    height: 7vh;
+	font-weight: bold;
+}
 header {
 	display: flex;
 	justify-content: space-between;
@@ -37,6 +47,7 @@ h1 {
 	background-color: white;
 	padding: 5px 25px;
 	border-radius: 8px;
+	margin-right: -30%;
 }
 
 .expense-form {
