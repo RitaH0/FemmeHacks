@@ -1,0 +1,18 @@
+.PlannerPage{
+    text-align: center;
+}
+
+.PlannerPage__body{
+    background-color: rgb(250, 250, 250);
+    height: 100vh;
+    width: 100vw;
+}
+
+.plannerBox{
+
+    width: 20vh;
+    height: 7vh;
+    
+    background-color: blueviolet;
+    margin-right: 10%;
+}

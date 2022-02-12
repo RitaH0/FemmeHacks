@@ -6,7 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WelcomePage from './pages/WelcomePage';
 import PlannerPage from './pages/PlannerPage';
+import EditDaily from './pages/EditDaily';
 import './pages/WelcomePage.css';
+import './pages/PlannerPage.css'
+import './pages/EditDaily.css';
+import './components/DailyColumn.css';
 
 
 
@@ -18,9 +22,8 @@ ReactDOM.render(
   <Routes>
     <Route path="/" element={<WelcomePage/>} />
     <Route path="/PlannerPage" element={<PlannerPage/>} />
-    {/* <Route path="/QuestionPage" element={<QuestionPage />} />
-    <Route path="/test" element={<Test />} />
-    <Route path="/ResultsPage" element={<ResultsPage />} /> */}
+    <Route path="/EditDaily" element={<EditDaily/>} />
+
     
   </Routes>
   {/* <Footer /> */}

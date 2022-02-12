@@ -1,0 +1,32 @@
+.columnBox{
+    background-color: rgb(198, 142, 250);
+    width: 40vh;
+    height: 12vh;
+    margin-left: 10%;
+    position: absolute;
+    top: 18%;
+}
+
+.columnText{
+    position: relative;
+    top: 30%;
+    color: black;
+    font-family: "Courier New",monospace;
+    font-size: 20px;
+}
+
+
+.columnInput{
+    position: absolute;
+    top: 34%;
+    left:10%;
+    width: 40vh;
+    height: 60vh;
+    border: none;
+    color: black;
+    font-family: "Courier New",monospace;
+    font-family: 15px;
+    font-weight: bold;
+    text-align: center;
+
+}
