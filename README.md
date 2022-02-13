@@ -1,17 +1,18 @@
 # Trip planner and expense tracker - FemmeHacks
+Built by Rita, Karren, Hannah, Yen
 
 
 ## Description
-Firstly ,this app allows users to create a travel plan by first choosing the duration (number of days) of the trip. Users can either view the overall plan 
+Firstly, this app allows users to create a travel plan by first choosing the duration (number of days) of the trip. Users can either view the overall plan 
 in the form of a table or detailed plan by clicking on individual days. Then, the users can input itinerary details. 
 
 Another function is the spending tracker, in which users can log their expenses for the trip and manage their financial situation. 
-The app include a line charts to view daily spending through out the trip (excluding the initial expenses of accomodation and travel to the destination) 
-and a pie chart to view the different categories of expenses.
 
 
 ## Notes
 (future functions to develop)
+* [ ] Include a line charts to view daily spending through out the trip (excluding the initial expenses of accomodation and travel to the destination) 
+and a pie chart to view the different categories of expenses.
 * [ ] Add pictures and comments to ascites 
 * [ ] Hotel name/flight info, linked with booking websites
 * [ ] Map of daily travel plan
@@ -21,7 +22,7 @@ and a pie chart to view the different categories of expenses.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Rita, Karren, Hannah, Yen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
