@@ -1,5 +1,5 @@
 # Trip planner and expense tracker - FemmeHacks
-Built by Rita, Karren, Hannah, Yen
+Built by Rita, Karren, Hannah, Yen.
 
 
 ## Description
